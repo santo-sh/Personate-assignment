@@ -6,11 +6,13 @@ import { ProgressBar, Button } from "react-bootstrap";
 console.log(process.env)
 
 AWS.config.update({
-  accessKeyId: process.env.accessKeyId,
-  secretAccessKey: process.env.secretAccessKey,
+  accessKeyId: process.env.REACT_APP_accessKeyId,
+  secretAccessKey: process.env.REACT_APP_secretAccessKey,
   region: "asia-south1",
   signatureVersion: "v4",
 });
+
+console.log(AWS.config)
 
 const baseStyle = {
   flex: 1,
