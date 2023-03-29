@@ -10,8 +10,6 @@ AWS.config.update({
   signatureVersion: "v4",
 });
 
-console.log(AWS.config)
-
 const baseStyle = {
   flex: 1,
   display: "flex",
