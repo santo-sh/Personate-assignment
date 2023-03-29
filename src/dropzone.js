@@ -3,6 +3,8 @@ import { useDropzone } from "react-dropzone";
 import AWS from "aws-sdk";
 import { ProgressBar, Button } from "react-bootstrap";
 
+console.log(process.env)
+
 AWS.config.update({
   accessKeyId: process.env.secretAccessKey,
   secretAccessKey: process.env.secretAccessKey,
