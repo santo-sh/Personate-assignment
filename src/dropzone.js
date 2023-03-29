@@ -6,7 +6,7 @@ import { ProgressBar, Button } from "react-bootstrap";
 console.log(process.env)
 
 AWS.config.update({
-  accessKeyId: process.env.secretAccessKey,
+  accessKeyId: process.env.accessKeyId,
   secretAccessKey: process.env.secretAccessKey,
   region: "asia-south1",
   signatureVersion: "v4",
